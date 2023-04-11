@@ -1,0 +1,44 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import 'base/variables';
+@import 'base/fonts';
+
+* {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: $t_gray;
+	margin: 0;
+   padding: 0;
+} 
+a, a:hover {
+	text-decoration: none;
+	outline: none;
+}
+ul {
+	list-style-type: none;
+}
+button, button:active, button:focus {
+	border: none;
+	outline: none;
+}
+.container {
+	max-width: 1140px;
+	position: relative;
+}
+.svg-sprite {
+	display: none;
+}
+
+@import 'blocks/header';
+@import 'blocks/home';
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/promo';
+@import 'blocks/slider';
+@import 'blocks/footer';
+@import 'blocks/forms';
+@import 'base/media';
+
+

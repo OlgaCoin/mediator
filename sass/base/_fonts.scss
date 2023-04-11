@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'Garamond';
+	src: local('GARA'),
+		url('../fonts/GARA.woff2') format('woff2'),
+		url('../fonts/GARA.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Garamond';
+	src: local('GARABD'),
+		url('../fonts/GARABD.woff2') format('woff2'),
+		url('../fonts/GARABD.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+font-family: 'medicon';
+src:  url('../fonts/medicon.eot?scetqr');
+src:  url('../fonts/medicon.eot?scetqr#iefix') format('embedded-opentype'),
+	url('../fonts/medicon.ttf?scetqr') format('truetype'),
+	url('../fonts/medicon.woff?scetqr') format('woff'),
+	url('../fonts/medicon.svg?scetqr#medicon') format('svg');
+font-weight: normal;
+font-style: normal;
+font-display: block;
+}
+
+i {
+/* use !important to prevent issues with browser extensions that change fonts */
+font-family: 'medicon' !important;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-arrow_left_slider:before {
+	content: "\e906";
+}
+.icon-arrow_right:before {
+	content: "\e907";
+	font-size: 12px;
+	line-height: 64px;
+	margin-left: 16px;
+}
+.icon-arrow_right_slider:before {
+	content: "\e908";
+}
+.icon-download-1:before {
+	content: "\e904";
+}
+.icon-filetype-pdf-1:before {
+	content: "\e905";
+}
+.icon-email_foo:before {
+	content: "\e900";
+}
+.icon-phone_foo:before {
+	content: "\e901";
+}
+.icon-tg_foo:before {
+	content: "\e902";
+}
+.icon-whatsapp_foo:before {
+	content: "\e903";
+}

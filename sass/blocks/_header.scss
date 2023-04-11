@@ -1,0 +1,51 @@
+.header {
+	height: 74px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	background-color: $white;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+	transition: all .3s;
+	&-small {
+		height: 60px;
+	}
+	&__logo {
+		max-width: 100%;
+		display: block;
+		height: 112px;
+		width: 117px;
+		background: url('../img/logo/logo_top.svg') center center/cover no-repeat;
+		transition: height .3s;
+		&-small {
+			width: 90px;
+			height: 60px;
+			background: url('../img/logo/logo_small.svg') center center/cover no-repeat;
+		}
+	}
+}
+.nav {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	&_left, &_right {
+		display: flex;
+		align-items: center;
+		margin: 0 34px;
+		& li {
+			margin: 0 23px;
+			& > a {
+				display: block;
+				line-height: 74px;
+				color: $t_dark;
+				font-weight: 600;
+				font-size: 16px;
+				transition: all .3s;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
