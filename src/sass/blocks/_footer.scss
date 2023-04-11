@@ -1,0 +1,61 @@
+.footer {
+	min-height: 156px;
+	background-color: #0E0E0E;
+	padding: 50px 0;
+	&__email {
+		display: flex;
+		align-items: center;
+		padding-bottom: 32px;		
+		transition: all .3s;
+		opacity: .7;
+		& span {
+			color: $white;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 30px;
+			margin-left: 18px;
+		}
+		&:hover {
+			opacity: 1;
+		}		
+	}		
+	&__social {
+		display: flex;
+		justify-content: start;	
+		&-item {
+			background-color: $white;
+			border-radius: 100%;
+			width: 38px;
+			height: 38px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 22px 0 0;
+			transition: all .3s;
+			& i.icon-email_foo {
+				font-size: 15px;
+			}
+			&:hover {
+				background-color: $primary;
+				& > i {
+					color: $white;
+				}
+			}
+		}
+	}
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 8px;
+		&-item {
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 30px;
+			color: rgba(255,255,255,.7);			
+			transition: all .3s;
+			&:hover {
+				color: $white;
+			}
+		}
+	}	
+}

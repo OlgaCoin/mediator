@@ -1,0 +1,182 @@
+
+@media (max-width: 1199px) {
+	.promo {
+		&__wrapper {
+			padding-left: 0;
+		}
+		&__title {
+			font-size: 50px;
+		}
+	}
+	.section-title:before {
+		display: none;
+	}
+	.mediation {
+		padding: 50px 20px 60px;
+	}
+	.parallax-window {
+		&__text {
+			font-size: 43px;
+			line-height: 57px;
+		}
+	}
+	.why {
+		padding: 50px 20px;
+	}	
+}
+
+@media (max-width: 991px) {
+	.promo {
+		min-height: 660px;
+		&__wrapper {
+			margin-top: 180px;
+		}
+		&__title {
+			font-size: 44px;
+		}
+		&__list {
+			li {
+				font-size: 20px;
+				margin-bottom: 12px;
+			}
+		}
+	}
+	.section-left {
+		width: 100%;
+	}
+	.parallax-window {
+		min-height: 400px;
+		&__text {
+			font-size: 42px;
+			line-height: 54px;
+		}
+	}
+	.footer {
+		padding: 0 20px;
+		&__inner-wrapper {
+			width: 70%;
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+	.promo {
+		background: url('../img/bg/first_bg_mobile.jpg') center center/cover no-repeat;
+		min-height: 100vh;
+		&__wrapper {
+			padding-top: 66%;
+			padding-left: 20px;
+			padding-bottom: 15px;
+		}
+		&__descr {
+			margin-bottom: 20px;
+		}
+		&__list {
+			li {
+				margin-bottom: 5px;
+				&:before {
+					top: 1px;
+				}
+			}
+		}
+	}
+	.btn {
+		&-wrapper {
+			justify-content: start;
+			margin-bottom: 30px;
+		}
+	}
+	.section-title {
+		margin-bottom: 40px;
+	}
+	.mediation__cap-block {
+		margin-bottom: 40px;
+	}
+	.parallax-window {
+		// min-height: 300px;
+		&__text {
+			padding: 0 20px;
+			font-size: 32px;
+			line-height: 46px;
+		}
+	}
+	.why {
+		&__item {
+			margin-bottom: 26px;
+			&:nth-child(3) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+	.footer {
+		&__inner-wrapper {
+			flex-direction: column;
+			align-items: end;			
+		}
+		&__email-wrapper {
+			margin-bottom: 15px;
+		}
+		&__social {	
+			&-item {	
+				width: 34px;
+				height: 34px;
+				margin: 0 0 0 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.header {
+		position: relative;
+		justify-content: start;
+		background-color: #000;
+		padding: 0 30px;
+		&__logo {
+			height: 82px;
+			width: 86px;
+		}
+	}
+	.promo {
+		min-height: 75vh;
+		&__wrapper {
+			display: none;
+		}
+		&__title {
+			font-size: 36px;
+		}
+		&__list {
+			li {
+				font-size: 17px;
+			}
+		}
+	}
+	.promo-mobile {
+		display: block;
+	}
+	.section-title {
+		font-size: 23px;
+		line-height: 36px;
+	}
+	.parallax-window {
+		&__text {
+			font-size: 26px;
+			padding: 0;
+			line-height: 43px;
+		}
+	}
+	.footer {
+		&__email {
+			img {
+				display: none;
+			}
+		}
+		&__logo {
+			img {
+				height: 82px;
+				width: 86px;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.title {
+	font-family: 'Garamond', serif;
+	text-transform: uppercase;
+}
+.promo__title {
+	font-weight: 400;
+	font-size: 54px;
+	color: $white;
+	line-height: 1;
+}
+.section-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 42px;
+	color: $primary;
+	position: relative;
+	margin-bottom: 64px;
+	&:before {
+		position: absolute;
+		content: '';
+		background-color: $primary;
+		width: 48px;
+		height: 2px;
+		left: -76px;
+		top: 20px;
+	}
+	.section-dark & {
+		color: $white;
+		&:before {
+			background-color: $white;
+		}
+	}
+}
