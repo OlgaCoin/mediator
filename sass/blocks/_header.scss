@@ -1,4 +1,5 @@
 .header {
+	padding: 0 15px;
 	height: 74px;
 	position: fixed;
 	top: 0;
@@ -8,7 +9,7 @@
 	background-color: $white;
 	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
 	transition: all .3s;
-	&-small {
+	&--small {
 		height: 60px;
 	}
 	&__logo {
@@ -18,10 +19,9 @@
 		width: 117px;
 		background: url('../img/logo/logo_top.svg') center center/cover no-repeat;
 		transition: height .3s;
-		&-small {
-			width: 90px;
-			height: 60px;
-			background: url('../img/logo/logo_small.svg') center center/cover no-repeat;
+		&--small {
+			height: 82px;
+			width: 86px;
 		}
 	}
 }
@@ -29,11 +29,11 @@
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	&_left, &_right {
+	&-left, &-right {
 		display: flex;
 		align-items: center;
 		margin: 0 34px;
-		& li {
+		& > li {
 			margin: 0 23px;
 			& > a {
 				display: block;
@@ -49,3 +49,89 @@
 		}
 	}
 }
+
+// Burger
+.burger {
+	display: none;
+	width: 60px;
+	height: 60px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	cursor: pointer;
+	transition: all .5s;
+	&__row {
+		height: 2px;
+		width: 45%;
+		margin: 2px 0;
+		background-color: $t_dark;
+		position: relative;
+		transition: all .5s;
+	}
+	&.active .burger__row {
+		&:first-child {
+			transform: rotate(-135deg);
+			top: 6px;
+		}
+		&:last-child {
+			transform: rotate(-225deg);
+			top: -6px;
+		}
+		&:nth-child(2) {
+			opacity: 0;
+		}
+	}
+}
+
+.mobile-menu {
+	transform: translateY(-100vh);
+	display: flex;
+	// flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px;
+	background-color: rgba(255,255,255,.1);
+	transition: all .5s;
+	z-index: 700;
+	position: fixed;
+	top: 60px; 
+	left:0;
+	width: 100%; 
+	height: 100%;
+	overflow: hidden;
+	&.active {
+		transform: translateY(0);
+		background-color: rgba(255,255,255,.9);
+	}
+	&__list {
+		list-style-type: none;
+		margin-bottom: 40px;
+	}
+	&__item {
+		& > a {
+			display: block;
+			line-height: 74px;
+			color: $t_dark;
+			font-weight: 600;
+			font-size: 20px;
+			transition: all .3s;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+	// & .social {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	& .social-item {
+	// 		margin: 0 10px;
+	// 		&__icon {
+	// 			display: block;
+	// 			width: 44px;
+	// 			height: 44px;
+	// 		}
+	// 	}
+	// }
+}
+
