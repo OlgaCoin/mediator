@@ -213,9 +213,10 @@
 	bottom: 178px;
 	right: 50px;
 	z-index: 600;
+	opacity: .8;
 	transition: all .3s;
 	&:hover {
-		opacity: .8;
+		opacity: 1;
 	}
 	&.show {
 		display: flex;
