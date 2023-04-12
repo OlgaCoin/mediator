@@ -2,7 +2,7 @@
 	font-family: 'Garamond', serif;
 	text-transform: uppercase;
 }
-.promo__title {
+.main-title {
 	font-weight: 400;
 	font-size: 54px;
 	color: $white;
@@ -24,7 +24,7 @@
 		left: -76px;
 		top: 20px;
 	}
-	.section-dark & {
+	.section--dark & {
 		color: $white;
 		&:before {
 			background-color: $white;

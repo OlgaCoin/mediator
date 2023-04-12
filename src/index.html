@@ -27,31 +27,76 @@
 <body>
 	<header class="header">
 		<nav class="nav">
-			<ul class="nav_left">
+			<ul class="nav-left">
 				<li><a href="#">Обо мне</a></li>
 				<li><a href="#">Медиация</a></li>
 				<li><a href="#">Медиатор</a></li>
 			</ul>
-			<a href="#" class="header__logo">
-				<!-- <img src="img/logo/logo_top.svg" alt="logo"> -->
-			</a>
-			<!-- <a href="#" class="header__logo-small">
-				<img src="img/logo/logo_small.svg" alt="logo">
-			</a> -->
-			<ul class="nav_right">
+			<a href="#" class="header__logo"></a>
+			<ul class="nav-right">
 				<li><a href="#">Подать заявку</a></li>
 				<li><a href="#">Рекомендации</a></li>
 				<li><a href="#">Блог</a></li>
 			</ul>
+			<div class="burger" title="Меню">
+				<div class="burger__row"></div>
+				<div class="burger__row"></div>
+				<div class="burger__row"></div>
+			</div>
 		</nav>
 	</header>
 
-	<section class="promo">
+	<div class="mobile-menu">
+		<ul class="mobile-menu__list">
+			<li class="mobile-menu__item">
+				<a href="#">Обо мне</a>
+			</li>
+			<li class="mobile-menu__item">
+				<a href="#">Медиация</a>
+			</li>
+			<li class="mobile-menu__item">
+				<a href="#">Медиатор</a>
+			</li>
+			<li class="mobile-menu__item">
+				<a href="#">Подать заявку</a>
+			</li>
+			<li class="mobile-menu__item">
+				<a href="#">Рекомендации</a>
+			</li>
+			<li class="mobile-menu__item">
+				<a href="#">Блог</a>
+			</li>
+		</ul>
+		<!-- <div class="social">
+			<a href="https://wa.me/+79253358387" target="_blank" class="social-item">
+				<svg class="social-item__icon">
+					<use xlink:href="#wa"></use>
+				</svg>
+			</a>
+			<a href="https://t.me/+79253358387" target="_blank" class="social-item">
+				<svg class="social-item__icon">
+					<use xlink:href="#tg"></use>
+				</svg>
+			</a>
+			<a href="tel:+79253358387" class="social-item">
+				<svg class="social-item__icon">
+					<use xlink:href="#phone"></use>
+				</svg>
+			</a>
+			<a href="mailto:ElenDanilova@vivaldi.net" target="_blank" class="social-item">
+				<svg class="social-item__icon">
+					<use xlink:href="#email"></use>
+				</svg>
+			</a>
+		</div> -->
+	</div>
+
+	<div class="promo">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-xl-6 offset-md-6 offset-xl-6">
 					<div class="promo__wrapper">
-						<h1 class="promo__title title">Елена Данилова</h1>
+						<h1 class="main-title title">Елена Данилова</h1>
 						<div class="promo__descr">Медиатор, фасилитатор, переговорщик</div>
 						<ul class="promo__list">
 							<li>Медиация, фасилитация деловых встреч и сессий</li>
@@ -63,45 +108,41 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<div class="promo-mobile">
 		<div class="container">
-			<div class="row">
-				<div class="hidden-xl hidden-md hidden-lg hidden-sm col-xs-12">
-					<h1 class="promo__title title">Елена Данилова</h1>
-					<div class="promo__descr">Медиатор, фасилитатор, переговорщик</div>
-					<ul class="promo__list">
-						<li>Медиация, фасилитация деловых встреч и сессий</li>
-						<li>Консультации в сфере переговоров</li>
-						<li>Разработка стратегии переговоров</li>
-						<li>Сопровождение в переговорах</li>
-					</ul>
-				</div>
-			</div>
+			<h1 class="main-title title">Елена Данилова</h1>
+			<div class="promo__descr">Медиатор, фасилитатор, переговорщик</div>
+			<ul class="promo__list">
+				<li>Медиация, фасилитация деловых встреч и сессий</li>
+				<li>Консультации в сфере переговоров</li>
+				<li>Разработка стратегии переговоров</li>
+				<li>Сопровождение в переговорах</li>
+			</ul>
 		</div>
 	</div>
 
 	<section class="mediation section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-xl-6 col-md-12">
 					<h2 class="section-title title">О медиации, смыслах и философии будущего</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-xl-6 col-md-6">
 					<div class="section-left">
 						<p class="cap-block mediation__cap-block">Медиация — это форма согласования интересов и управления
 							конфликтом, в котором нейтральный медиатор оказывает помощь двум и более сторонам, с согласия
 							последних и с учетом интересов каждой, в поиске взаимовыгодного или взаимоприемлемого решения.</p>
 					</div>
-					<button href="#" class="btn btn_stroke">
+					<button class="btn btn--stroke">
 						Узнать больше о медиации
 						<i class="icon-arrow_right"></i>
 					</button>
 				</div>
-				<div class="col-md-6">
+				<div class="col-xl-6 col-md-6">
 					<div class="mediation__content">
 						Медиация может быть использована для урегулирования всех типов конфликтов, в которых участники имеют
 						желание и возможность сохранять контроль над принятием решений.
@@ -110,9 +151,10 @@
 						В России практика медиации ещё не стала распространённой, ее достоинства остаются в тени, а само
 						понятие часто окутано мифами.
 					</div>
-					<div class="btn btn_solid">
+					<div class="caption-mobile">Задайте вопросы мне лично:</div>
+					<div class="btn btn--solid">
 						<span>Задайте вопросы мне лично:</span>
-						<div class="btn_solid-social">
+						<div class="social">
 							<a href="https://wa.me/+79253358387" target="_blank" class="social-item">
 								<svg class="social-item__icon">
 									<use xlink:href="#wa"></use>
@@ -179,7 +221,7 @@
 	</div>
 	<!-- SVG-sprite  -->
 
-	<div class="parallax-window" data-parallax="scroll" data-image-src="img/bg/quote_bg.jpg">
+	<div class="parallax-window parallax-window--quote" data-parallax="scroll" data-image-src="img/bg/quote_bg.jpg">
 		<div class="container">
 			<div class="parallax-window__text">
 				«Медиация — один из наиболее действенных методов предотвращения, регулирования и разрешения конфликтов»
@@ -199,12 +241,12 @@
 						</p>
 						<p class="section__p">
 							В качестве переговорщика и консультанта в области международного морского права сопровождала <span
-								class="section__p-bold">проект репатриации</span> гражданина России из Евросоюза в условиях
+								class="bold">проект репатриации</span> гражданина России из Евросоюза в условиях
 							пандемии и санкций (август — октябрь 2022 г.).
 						</p>
 						<p class="section__p">
 							Спикер Клуба выпускников EMPAT (клуб выпускников программы «Бизнес-медиация») и создатель проекта
-							EMPAT Alumni-практикум (<span class="section__p-bold">супервизия для медиаторов</span>).
+							EMPAT Alumni-практикум (<span class="bold">супервизия для медиаторов</span>).
 						</p>
 					</div>
 				</div>
@@ -212,7 +254,7 @@
 				<div class="col-md-6">
 					<div class="about-me__right">
 						<p class="section__p">
-							<span class="section__p-bold">Проведение стратегических сессий</span> и фасилитация разработки
+							<span class="bold">Проведение стратегических сессий</span> и фасилитация разработки
 							стратегий, обеспечение координации деятельности федеральных органов государственной власти
 							и представителей системообразующих предприятий при разработке и совершенствовании международных
 							соглашений и актов международного права, фасилитация экспертных групп включая организацию
@@ -220,15 +262,15 @@
 							федеральной государственной экологической экспертизы.
 						</p>
 						<p class="section__p">
-							<span class="section__p-bold">Адепт устойчивого развития</span> и осознанной жизнедеятельности,
-							эксперт повестки ESG и <span class="section__p-bold">рассматриваю медиацию как элемент мышления
+							<span class="bold">Адепт устойчивого развития</span> и осознанной жизнедеятельности,
+							эксперт повестки ESG и <span class="bold">рассматриваю медиацию как элемент мышления
 								будущего</span> для достижения ЦУР ООН. Волонтер проектов, связанных с устойчивым развитием
 							и экологией. В период с 2020 по июль 2022 года возглавляла экологический проект в качестве
 							Директора
 							Департамента правительственной НКО.
 						</p>
 					</div>
-					<button class="btn btn_solid">
+					<button class="btn btn--solid">
 						Мой профессиональный путь
 						<i class="icon-arrow_right"></i>
 					</button>
@@ -238,7 +280,7 @@
 	</section>
 	<!-- /about-me-section -->
 
-	<section class="go section section-dark">
+	<section class="go section section--dark">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -248,11 +290,11 @@
 							конфликта.
 						</p>
 						<p class="section__p">
-							<span class="section__p-bold"> Эта идея прослеживается в игре Го.</span>
+							<span class="bold"> Эта идея прослеживается в игре Го.</span>
 						</p>
-						<p class=" section__p">Это древняя стратегическая игра с китайскими корнями. <span
-								class="section__p-bold">Она про развитие</span> и управление, выстраивание отношений,
-							сотрудничество и соперничество, <span class="section__p-bold">реализацию возможностей</span>.
+						<p class=" section__p">Это древняя стратегическая игра с китайскими корнями. <span class="bold">Она
+								про развитие</span> и управление, выстраивание отношений,
+							сотрудничество и соперничество, <span class="bold">реализацию возможностей</span>.
 							Про то, что ты можешь быть одновременно лидером в каких-то сферах и ведомым в других.</p>
 						<p class="section__p">Ты можешь вести переговоры, разменивать или игнорировать одни позиции, отстаивая
 							жизненно важные другие.</p>
@@ -266,12 +308,12 @@
 							из существующих обстоятельств.</p>
 						<p class="section__p">Контекст может меняться с каждым следующим событием. Не важно, как ты оказался
 							в текущей ситуации, важно, что ты предпримешь прямо сейчас.</p>
-						<p class="section__p">Этот же принцип подходит для <span class="section__p-bold">управления
-								конфликтом</span>. В медиации принимаемые решения остаются <span class="section__p-bold">в зоне
+						<p class="section__p">Этот же принцип подходит для <span class="bold">управления
+								конфликтом</span>. В медиации принимаемые решения остаются <span class="bold">в зоне
 								контроля сторон</span>, что позволяет раскрыть весь потенциал конфликта и достичь реалистичных
 							договоренностей в парадигме «gain-gain».</p>
 					</div>
-					<button class="btn btn_solid btn_light">
+					<button class="btn btn--solid btn--light">
 						Как выглядит процесс медиации
 						<i class="icon-arrow_right"></i>
 					</button>
@@ -284,45 +326,48 @@
 	<section class="digits section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-xl-6 col-lg-6 col-md-12">
 					<h2 class="section-title title">Осязаемая эффективность медиации</h2>
 				</div>
 			</div>
 			<div class="digits__content">
 				<div class="row">
-					<div class="col-md-3">
+
+					<div class="col-md-3 col-sm-6 col-6">
 						<div class="digits__item">
-							<div class="digits__img first">3</div>
+							<div class="digits__img-wrapper first"><img src="img/digits/first.png" alt="photo" class="digits__img"></div>
 							<div class="digits__title">встречи</div>
 							<div class="digits__descr">в среднем требуется на урегулирование конфликта</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-6 col-6">
 						<div class="digits__item">
-							<div class="digits__img second">50</div>
-							<div class="digits__title">% кейсов </div>
+							<div class="digits__img-wrapper second"><img src="img/digits/second.png" alt="photo" class="digits__img"></div>
+							<div class="digits__title">% кейсов</div>
 							<div class="digits__descr">успешно завершаются после второй встречи</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-6 col-6">
 						<div class="digits__item">
-							<div class="digits__img third">20</div>
-							<div class="digits__title">% кейсов </div>
+							<div class="digits__img-wrapper third"><img src="img/digits/third.png" alt="photo" class="digits__img"></div>
+							<div class="digits__title">% кейсов</div>
 							<div class="digits__descr">успешно завершаются после первой встречи</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-6 col-6">
 						<div class="digits__item">
-							<div class="digits__img fourth">75</div>
+							<div class="digits__img-wrapper fourth"><img src="img/digits/fourth.png" alt="photo" class="digits__img"></div>
 							<div class="digits__title">% дел</div>
 							<div class="digits__descr">урегулируется при посредничестве или вскоре после него</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
+
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
-					<button class="btn btn_solid">
+					<button class="btn btn--solid">
 						Классические вопросы клиентов
 						<i class="icon-arrow_right"></i>
 					</button>
@@ -366,7 +411,7 @@
 						Деловое посредничество может восстановить или воссоздать коммерческие отношения, которые у вас были
 						до возникновения спора, даже если вы считаете, что отношения закончились.
 					</div>
-					<button class="btn btn_solid">
+					<button class="btn btn--solid">
 						Ваши выгоды от делового посредничества
 						<i class="icon-arrow_right"></i>
 					</button>
@@ -387,25 +432,25 @@
 				</div>
 			</div>
 			<div class="partners__slider">
-					<a target="_blank" href="#" class="partners__item">
-						<img src="img/logo/mc-logo.svg" alt="slide">
-					</a>
-					<a target="_blank" href="#" class="partners__item">
-						<img src="img/logo/mc-logo.svg" alt="slide">
-					</a>
-					<a target="_blank" href="#" class="partners__item">
-						<img src="img/logo/mc-logo.svg" alt="slide">
-					</a>
-					<a target="_blank" href="#" class="partners__item">
-						<img src="img/logo/mc-logo.svg" alt="slide">
-					</a>
-					<a target="_blank" href="#" class="partners__item">
-						<img src="img/logo/mc-logo.svg" alt="slide">
-					</a>
+				<a target="_blank" href="#" class="partners__item">
+					<img src="img/logo/mc-logo.svg" alt="slide">
+				</a>
+				<a target="_blank" href="#" class="partners__item">
+					<img src="img/logo/mc-logo.svg" alt="slide">
+				</a>
+				<a target="_blank" href="#" class="partners__item">
+					<img src="img/logo/mc-logo.svg" alt="slide">
+				</a>
+				<a target="_blank" href="#" class="partners__item">
+					<img src="img/logo/mc-logo.svg" alt="slide">
+				</a>
+				<a target="_blank" href="#" class="partners__item">
+					<img src="img/logo/mc-logo.svg" alt="slide">
+				</a>
 			</div>
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
-					<button class="btn btn_solid">
+					<button class="btn btn--solid">
 						Порядок сотрудничества
 						<i class="icon-arrow_right"></i>
 					</button>
@@ -431,8 +476,8 @@
 							потенциал раскрывшихся обстоятельств на развитие.
 						</p>
 					</div>
-					<div class="btn-wrapper">
-						<a target="_blank" href="docs/DEA_cv_ru.pdf" class="btn btn_stroke btn_download">
+					<div class="btn-wrapper future__btn-wrapper">
+						<a target="_blank" href="docs/DEA_cv_ru.pdf" class="btn btn--stroke btn-download">
 							<i class="icon-filetype-pdf-1 btn__icon"></i>
 							Скачать CV
 							<i class="icon-download-1"></i>
@@ -440,17 +485,17 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<button class="btn btn_solid">
+					<button class="btn btn--solid">
 						Медиация на практике
 						<i class="icon-arrow_right"></i>
 					</button>
 					<br>
-					<button class="btn btn_solid">
+					<button class="btn btn--solid">
 						Преимущества медиации
 						<i class="icon-arrow_right"></i>
 					</button>
 					<br>
-					<button class="btn btn_solid">
+					<button class="btn btn--solid">
 						Сравнение затрат
 						<i class="icon-arrow_right"></i>
 					</button>
@@ -462,56 +507,59 @@
 
 	<footer class="footer">
 		<div class="container">
-
 			<div class="row">
-				<div class="col-md-2">
-					<img src="img/logo/logo_foo.svg" alt="logo">
+				<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-4">
+					<img src="img/logo/logo_foo.svg" alt="logo" class="footer__logo">
 				</div>
-				<div class="col-md-4">
-					<a href="mailto:ElenDanilova@vivaldi.net" class="footer__email">
-						<img src="icons/footer/email_lone.svg" alt="email">
-						<span>ElenDanilova@vivaldi.net</span>
-					</a>
-					<div class="footer__social">
-						<a href="https://t.me/+79253358387" target="_blank" class="footer__social-item">
-							<i class="icon-tg_foo"></i>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-8">
+					<div class="footer__top">
+						<a href="mailto:ElenDanilova@vivaldi.net" class="footer__email">
+							<img src="icons/footer/email_lone.svg" alt="email">
+							<span>ElenDanilova@vivaldi.net</span>
 						</a>
-						<a href="https://wa.me/+79253358387" target="_blank" class="footer__social-item">
-							<i class="icon-whatsapp_foo"></i>
-						</a>
-						<a href="tel:+79253358387" class="footer__social-item">
-							<i class="icon-phone_foo"></i>
-						</a>
-						<a href="mailto:ElenDanilova@vivaldi.net" target="_blank" class="footer__social-item">
-							<i class="icon-email_foo"></i>
-						</a>
+						<div class="footer__social">
+							<a href="https://t.me/+79253358387" target="_blank" class="footer__social-item">
+								<i class="icon-tg_foo"></i>
+							</a>
+							<a href="https://wa.me/+79253358387" target="_blank" class="footer__social-item">
+								<i class="icon-whatsapp_foo"></i>
+							</a>
+							<a href="tel:+79253358387" class="footer__social-item">
+								<i class="icon-phone_foo"></i>
+							</a>
+							<a href="mailto:ElenDanilova@vivaldi.net" target="_blank" class="footer__social-item">
+								<i class="icon-email_foo"></i>
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<ul class="footer__menu">
-						<li>
-							<a href="#" class="footer__menu-item">Контакты</a>
-						</li>
-						<li>
-							<a href="#" class="footer__menu-item">Документы</a>
-						</li>
-						<li>
-							<a href="#" class="footer__menu-item">Партнеры</a>
-						</li>
-						<li>
-							<a href="#" class="footer__menu-item">УР</a>
-						</li>
-						<li>
-							<a href="#" class="footer__menu-item">Карта сайта</a>
-						</li>
-					</ul>
-					<div class="search-form">
-						<form class="search-form__form" action="/search" method="get">
-							<input type="text" placeholder="Поиск" class="search-form__input" name="q">
-							<button type="submit" class="search-form__submit">
-								<img src="icons/search.svg" alt="search">
-							</button>
-						</form>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+					<div class="footer__bottom">
+						<ul class="footer__menu">
+							<li>
+								<a href="#" class="footer__menu-item">Контакты</a>
+							</li>
+							<li>
+								<a href="#" class="footer__menu-item">Документы</a>
+							</li>
+							<li>
+								<a href="#" class="footer__menu-item">Партнеры</a>
+							</li>
+							<li>
+								<a href="#" class="footer__menu-item">УР</a>
+							</li>
+							<li>
+								<a href="#" class="footer__menu-item">Карта сайта</a>
+							</li>
+						</ul>
+						<div class="search-form">
+							<form class="search-form__form" action="/search" method="get">
+								<input type="text" placeholder="Поиск" class="search-form__input" name="q">
+								<button type="submit" class="search-form__submit">
+									<img src="icons/search.svg" alt="search">
+								</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -522,10 +570,10 @@
 		<i class="icon-arrow_left_slider"></i>
 	</div>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/libs/parallax.min.js"></script>
-	<script type="text/javascript" src="js/libs/slick.min.js"></script>
+	<script src="js/libs/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

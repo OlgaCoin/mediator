@@ -13,7 +13,9 @@
 			font-weight: 500;
 			font-size: 16px;
 			line-height: 30px;
-			margin-left: 18px;
+		}
+		& img {
+			margin-right: 18px;
 		}
 		&:hover {
 			opacity: 1;
@@ -37,7 +39,7 @@
 			}
 			&:hover {
 				background-color: $primary;
-				& > i {
+				& i {
 					color: $white;
 				}
 			}
@@ -48,7 +50,7 @@
 		justify-content: space-between;
 		padding-bottom: 8px;
 		&-item {
-			font-weight: 600;
+			font-weight: 500;
 			font-size: 16px;
 			line-height: 30px;
 			color: rgba(255,255,255,.7);			

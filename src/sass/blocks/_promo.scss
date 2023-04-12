@@ -4,8 +4,7 @@
 	margin-top: 74px;
 	color: $white;
 	&__wrapper {
-		margin-top: 240px;
-		padding-left: 30px;
+		padding: 45% 0 0 30px;
 	}
 	&__descr {
 		font-weight: 400;
@@ -16,7 +15,7 @@
 	&__list {
 		list-style-type: none;	
 		padding-left: 22px;	
-		li {
+		& li {
 			position: relative;
 			font-family: 'Garamond', serif;
 			font-weight: 700;
