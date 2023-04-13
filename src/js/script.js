@@ -37,6 +37,7 @@ $(document).ready(function () {
 		speed: 1200,
 		slidesToShow: 4,
 		slidesToScroll: 4,
+		// variableWidth: true,
 		// autoplay: true,
 		// swipeToSlide: true,
 		// adaptiveHeight: true,
@@ -58,11 +59,11 @@ $(document).ready(function () {
 				}
 			},
 			{
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
-			}
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
 			},
 			{
 				breakpoint: 480,

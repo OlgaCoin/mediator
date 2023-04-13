@@ -87,7 +87,6 @@
 .mobile-menu {
 	transform: translateY(-100vh);
 	display: flex;
-	// flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 40px 20px;
@@ -121,17 +120,5 @@
 			}
 		}
 	}
-	// & .social {
-	// 	display: flex;
-	// 	justify-content: space-between;
-	// 	& .social-item {
-	// 		margin: 0 10px;
-	// 		&__icon {
-	// 			display: block;
-	// 			width: 44px;
-	// 			height: 44px;
-	// 		}
-	// 	}
-	// }
 }
 

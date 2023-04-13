@@ -17,7 +17,7 @@
 		padding-left: 22px;	
 		& li {
 			position: relative;
-			font-family: 'Garamond', serif;
+			font-family: 'Garamond', Garamond, serif;
 			font-weight: 700;
 			font-size: 22px;
 			line-height: 28px;
@@ -30,7 +30,7 @@
 				width: 24px;
 				height: 24px;
 				left: -30px;
-				top: 0;
+				top: 1px;
 				background: url('../icons/chevron_right_mono.svg') center center/cover no-repeat;
 			}
 		}			

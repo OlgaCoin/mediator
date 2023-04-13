@@ -207,9 +207,6 @@
 		&__list {
 			li {
 				margin-bottom: 5px;
-				&:before {
-					top: 1px;
-				}
 			}
 		}
 	}
@@ -218,7 +215,6 @@
 	}
 	.mediation {
 		&__content {
-			margin-top: 30px;
 			margin-bottom: 40px;
 		}
 		& .btn--solid {
@@ -244,10 +240,8 @@
 			}
 		}
 	}
-	.future {
-		&__btn-wrapper {
-			margin-bottom: 40px;
-		}
+	.btn-wrapper {
+		margin-bottom: 40px;
 	}
 	.footer {
 		padding: 25px 20px 40px;
@@ -345,7 +339,8 @@
 		}
 		&__descr {
 			font-size: 16px;
-			line-height: 20px;
+			line-height: 22px;
+			margin-top: 8px;
 		}
 	}
 	.footer {

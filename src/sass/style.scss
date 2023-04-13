@@ -1,7 +1,8 @@
 @import 'libs/bootstrap-reboot.min';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
-@import 'base/variables';
 @import 'base/fonts';
+@import 'base/variables';
+
 
 * {
 	font-family: 'Raleway', sans-serif;
@@ -15,6 +16,12 @@
 a, a:hover {
 	text-decoration: none;
 	outline: none;
+}
+a.btn--solid, a.btn--solid:link, a.btn--solid:visited, a.btn--solid:hover, a.btn--solid:focus, a.btn--solid:active{
+	color: $t_dark;
+}
+a.btn--light, a.btn--light:link, a.btn--light:visited, a.btn--light:hover, a.btn--light:focus, a.btn--light:active{
+	color: $white;
 }
 ul {
 	list-style-type: none;

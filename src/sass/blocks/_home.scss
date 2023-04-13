@@ -27,7 +27,7 @@
 	color: $t_dark;
 	margin-bottom: 40px;
 	&:first-letter {
-		font-family: 'Garamond', serif;
+		font-family: 'Garamond', Garamond, serif;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 90px;
@@ -76,7 +76,15 @@
 			}
 		}	
 	}
+	&__temp-text {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 26px;
+		color: $t_dark;
+		margin-top: 50px;
+	}
 }
+
 .caption-mobile {
 	display: none;
 	font-weight: 600;
@@ -92,7 +100,7 @@
 	justify-content: center;
 	align-items: center;
 	&__text {
-		font-family: 'Garamond', serif;
+		font-family: 'Garamond', Garamond, serif;
 		font-weight: 700;
 		font-size: 45px;
 		line-height: 58px;

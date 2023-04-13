@@ -6,6 +6,7 @@
 	font-weight: 600;
 	font-size: 18px;
 	transition: background-color .3s ease, color .2s linear;
+	text-align: center;
 	&-wrapper {
 		display: flex;
 		justify-content: start;
@@ -89,5 +90,8 @@
 				}
 			}
 		}		
+	}
+	&-social {
+		text-align: left;
 	}
 }
