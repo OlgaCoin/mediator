@@ -4,7 +4,7 @@
 		&-left, &-right {
 			margin: 0 26px;
 			& > li {
-				margin: 0 20px;
+				padding: 0 20px;
 			}
 		}
 	}	
@@ -25,6 +25,9 @@
 	}
 	.mediation {
 		min-height: 576px;
+		& .cap-block {
+			margin-bottom: 44px;
+		}
 	}
 	.parallax-window {
 		&__text {
@@ -64,10 +67,10 @@
 		min-height: 650px;
 	}
 	.footer {
-		padding: 50px 20px;
+		padding: 30px 20px;
 	}
 	.toTop {
-		bottom: 180px;
+		right: 30px;
 	}
 }
 
@@ -83,7 +86,7 @@
 		&-left, &-right {
 			margin: 0 10px;
 			& > li {
-				margin: 0 12px;
+				padding: 0 12px;
 				& > a {
 					font-size: 15px;
 				}
@@ -156,7 +159,6 @@
 	}
 	.footer {
 		&__email {
-			padding-bottom: 38px;
 			& span {
 				font-size: 14px;
 			}
@@ -168,7 +170,7 @@
 			&-item {
 				width: 35px;
 				height: 35px;
-				margin: 0 18px 0 0;
+				margin: 0 0 0 18px;
 			}
 		}
 		&__menu {
@@ -176,9 +178,6 @@
 				font-size: 14px;
 			}
 		}
-	}
-	.toTop {
-		bottom: 175px;
 	}
 }
 
@@ -245,9 +244,6 @@
 	}
 	.footer {
 		padding: 25px 20px 40px;
-		&__email {
-			padding-bottom: 0;
-		}
 		&__social {	
 			&-item {	
 				width: 34px;
@@ -256,13 +252,8 @@
 			}
 		}
 		&__top {
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			margin-top: 25px;
-		}
-		&__bottom {
-			margin-top: 30px;
+			flex-direction: column;
+			align-items: end;
 		}
 		&__logo {
 			height: 82px;
@@ -270,7 +261,7 @@
 		}
 	}
 	.toTop {
-		bottom: 255px;
+		bottom: 140px;
 	}
 }
 
@@ -346,7 +337,6 @@
 	.footer {
 		padding: 30px 10px 40px;
 		&__email {
-			padding-bottom: 20px;
 			& img {
 				display: none;
 			}
@@ -358,22 +348,11 @@
 				margin: 0 0 0 12px;
 			}
 		}
-		&__top {
-			display: flex;
-			flex-direction: column;
-			align-items: end;
-			margin-top: 0;
-		}
 		&__menu {
-			padding-bottom: 8px;
-			flex-wrap: wrap;
+			justify-content: start;
 			&-item {				
 				margin-right: 20px;
 			}
 		}	
-	}
-	.toTop {
-		bottom: 295px;
-		right: 20px;
 	}
 }

@@ -16,19 +16,13 @@ $(document).ready(function () {
 		} else {
 			$(".header__logo").removeClass("header__logo--small");
 		};
-		// if (scroll >= 350) {
-		// 	$('.header__logo').css('display', 'none');
-		// 	$('.header__logo-small').css('display', 'block');
-		// } else {
-		// 	$('.header__logo').css('display', 'block');
-		// 	$('.header__logo-small').css('display', 'none');
-		// }
 	});
+
+	//hamburger
 
 	$(".burger").click(function () {
 		$(this).toggleClass("active");
 		$(".mobile-menu").toggleClass("active");
-
 	});
 
 	//slick-slider
@@ -37,10 +31,7 @@ $(document).ready(function () {
 		speed: 1200,
 		slidesToShow: 4,
 		slidesToScroll: 4,
-		// variableWidth: true,
 		// autoplay: true,
-		// swipeToSlide: true,
-		// adaptiveHeight: true,
 		prevArrow: '<button type="button" class="slick-prev"><i class="icon-arrow_left_slider"></i></button>',
 		nextArrow: '<button type="button" class="slick-next"><i class="icon-arrow_right_slider"></i></button>',
 		responsive: [

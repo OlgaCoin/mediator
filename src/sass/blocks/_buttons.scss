@@ -12,6 +12,13 @@
 		justify-content: start;
 		align-items: center;		
 	}
+	& i {
+		&.icon-arrow_right:before {
+			font-size: 12px;
+			line-height: 64px;
+			margin-left: 16px;
+		}
+	}
 	&--stroke, &--stroke:visited {
 		padding: 17px 30px;
 		justify-content: space-between;
@@ -24,16 +31,16 @@
 		& i {
 			color: $primary;
 		}	
-		&:hover {
-			border: 2px solid $primary;
-			background-color: $primary;
+	}
+	&--stroke:hover {
+		border: 2px solid $primary;
+		background-color: $primary;
+		color: $white;
+		& i {
 			color: $white;
-			& i {
-				color: $white;
-			}
-			& i.btn__icon:after {
-				background-color: $white;
-			}
+		}
+		& i.btn__icon:after {
+			background-color: $white;
 		}
 	}
 	&--solid {

@@ -41,15 +41,12 @@ line-height: 1;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
- 
+
 .icon-arrow_left_slider:before {
 	content: "\e906";
 }
 .icon-arrow_right:before {
 	content: "\e907";
-	font-size: 12px;
-	line-height: 64px;
-	margin-left: 16px;
 }
 .icon-arrow_right_slider:before {
 	content: "\e908";

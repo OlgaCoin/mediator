@@ -66,8 +66,10 @@
 					width: 36px;
 					height: 36px;	
 					transition: all .3s;	
+					opacity: .8;
 					&:hover {
 						filter: drop-shadow(0 4px 8px rgba(90, 157, 166, .6));
+						opacity: 1
 					}
 				}
 				&:last-child {
@@ -218,7 +220,7 @@
 	border-radius: 100%;
 	background-color: $primary;
 	position: fixed;
-	bottom: 178px;
+	bottom: 140px;
 	right: 50px;
 	z-index: 600;
 	opacity: .8;
